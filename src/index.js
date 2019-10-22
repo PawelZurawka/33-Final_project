@@ -4,17 +4,17 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducer from './reducers/reducer';
-import './index.scss';
+import { BrowserRouter as Router } from 'react-router-dom';
+import store from './redux/store';
 
-const store = createStore(reducer);
-
-ReactDOM.render(
+const Root = () => (
   <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
+    <Router>
+      <App />
+    </Router>
+  </Provider>
 );
+
+ReactDOM.render(<Root />, document.getElementById('root'));
 
 serviceWorker.unregister();
