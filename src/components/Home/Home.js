@@ -27,7 +27,7 @@ class Home extends React.Component {
       <div className='home'>
         <div className='home-sort col-sm-12 col-md-4 col-lg-3'>
           <div className='home-sort-text-wrapper'>
-            <p className='home-sort-header'>Sort:</p>
+            <p className='home-sort-header'>Sort by:</p>
             <ul className='home-sort-list'>
               <li
                 className='home-sort-list-item'
@@ -35,7 +35,7 @@ class Home extends React.Component {
                 data-order='asc'
                 onClick={event => this.sort(event)}
               >
-                Name: A-Z
+                Name: A to Z
               </li>
               <li
                 className='home-sort-list-item'
@@ -43,7 +43,7 @@ class Home extends React.Component {
                 data-order='desc'
                 onClick={event => this.sort(event)}
               >
-                Name: Z-A
+                Name: Z to A
               </li>
               <li
                 className='home-sort-list-item'
@@ -51,7 +51,7 @@ class Home extends React.Component {
                 data-order='asc'
                 onClick={event => this.sort(event)}
               >
-                Price: ascending
+                Price: low to high
               </li>
               <li
                 className='home-sort-list-item'
@@ -59,7 +59,7 @@ class Home extends React.Component {
                 data-order='desc'
                 onClick={event => this.sort(event)}
               >
-                Price: descending
+                Price: high to low
               </li>
             </ul>
           </div>
