@@ -10,7 +10,7 @@ import Faq from './components/pages/FAQ/FaqPage'
 import Rules from './components/pages/Rules/RulesPage'
 import Contact from './components/pages/Contact/ContactPage'
 import NotFound from './components/pages/NotFound/NotFoundPage'
-//import Product from './components/Product/ProductItem';
+import Product from './components/pages/Product/ProductPage'
 import Cart from './components/pages/Cart/CartPage'
 import './App.scss'
 
@@ -19,13 +19,13 @@ class App extends React.Component {
     return (
       <MainLayout>
         <Switch>
-          <Route exact path={'/rules'} component={Rules} />
           <Route exact path={'/'} component={Home} />
+          <Route exact path={'/rules'} component={Rules} />
           <Route exact path={'/faq'} component={Faq} />
           <Route exact path={'/rules'} component={Rules} />
           <Route exact path={'/contact'} component={Contact} />
           <Route exact path={'/cart'} component={Cart} />
-          {/* <Route exact path={'/product/:id'} component={Product} /> */}
+          <Route exact path={'/product/:id'} component={Product} />
           <Route component={NotFound} />
         </Switch>
       </MainLayout>
