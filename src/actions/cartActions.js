@@ -7,14 +7,14 @@ export const getProduct = product => {
 
 export const qtyAdd = product => {
   return {
-    type: 'QTY_INCREASE',
+    type: 'QTY_ADD',
     payload: product,
   }
 }
 
 export const qtyRemove = product => {
   return {
-    type: 'QTY_DECREASE',
+    type: 'QTY_REMOVE',
     payload: product,
   }
 }

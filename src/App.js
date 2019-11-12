@@ -1,38 +1,41 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import { MainLayout } from './components/layout/MainLayout/MainLayout'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
-import Home from './components/pages/Home/HomePage'
-import Faq from './components/pages/FAQ/FaqPage'
-import Rules from './components/pages/Rules/RulesPage'
-import Contact from './components/pages/Contact/ContactPage'
-import NotFound from './components/pages/NotFound/NotFoundPage'
-import Product from './components/pages/Product/ProductPage'
-import Cart from './components/pages/Cart/CartPage'
-import './App.scss'
+//import './App.scss'
+
+// Import components
+import { MainLayout } from './components/MainLayout/MainLayout'
+import Home from './components/Home/Home'
+import Faq from './components/FAQ/Faq'
+import Rules from './components/Rules/Rules'
+import Contact from './components/Contact/Contact'
+import NotFound from './components/NotFound/NotFound'
+import Product from './components/SingleProduct/SingleProduct'
+import Cart from './components/Cart/Cart'
 
 class App extends React.Component {
   render() {
     return (
-      <MainLayout>
-        <Switch>
-          <Route exact path={'/'} component={Home} />
-          <Route exact path={'/rules'} component={Rules} />
-          <Route exact path={'/faq'} component={Faq} />
-          <Route exact path={'/rules'} component={Rules} />
-          <Route exact path={'/contact'} component={Contact} />
-          <Route exact path={'/cart'} component={Cart} />
-          <Route exact path={'/product/:id'} component={Product} />
-          <Route component={NotFound} />
-        </Switch>
-      </MainLayout>
+      <BrowserRouter>
+        <MainLayout>
+          <Switch>
+            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/faq'} component={Faq} />
+            <Route exact path={'/rules'} component={Rules} />
+            <Route exact path={'/contact'} component={Contact} />
+            <Route exact path={'/cart'} component={Cart} />
+            <Route exact path={'/product/:id'} component={Product} />
+            <Route path='/404' component={NotFound} />
+            <Redirect from='*' to='/404' />
+          </Switch>
+        </MainLayout>
+      </BrowserRouter>
     )
   }
 }
 
 library.add(fab, fas, faShoppingBag)
-
 export default App

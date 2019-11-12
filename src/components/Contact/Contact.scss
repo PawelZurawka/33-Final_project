@@ -1,0 +1,71 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.contact-header {
+  margin: 30px 0 20px;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+}
+
+.contact-email,
+.contact-phone {
+  margin: 12px 0;
+  font-size: 1.1rem;
+}
+
+.email-address {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #BBDEFB;
+  }
+}
+
+.contact-social-media-header {
+  margin: 30px 0 20px;
+  padding: 15px 0;
+}
+
+.contact-social-media {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-social-media-facebook,
+.contact-social-media-instagram,
+.contact-social-media-twitter,
+.contact-social-media-linkedin,
+.contact-social-media-github {
+  padding: 8px 12px;
+
+  &:hover {
+    transition: 0.6s ease-in-out;
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+}
+
+.contact-social-media-facebook {
+  color: #3c5a99;
+}
+.contact-social-media-instagram {
+  color: #DB004C;
+}
+.contact-social-media-twitter {
+  color: #1da1f2;
+}
+.contact-social-media-linkedin {
+  color: #0073b0;
+}
+.contact-social-media-github {
+  color: #292F34;
+}
