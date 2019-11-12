@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 // Import styles
-import './Faq.scss';
+import './FaqPage.scss'
 
-const Faq = () => (
+const FaqPage = () => (
   <div className='faq'>
     <h1 className='faq__header'>Frequently Asked Questions</h1>
     <ol className='faq__list'>
@@ -54,6 +54,6 @@ const Faq = () => (
       </li>
     </ol>
   </div>
-);
+)
 
-export default Faq;
+export default FaqPage

@@ -1,26 +1,26 @@
 export const getProduct = product => {
   return {
     type: 'GET_PRODUCT',
-    payload: product
-  };
-};
+    payload: product,
+  }
+}
 
-export const quantityAdd = product => {
+export const qtyAdd = product => {
   return {
-    type: 'QUANTITY_INCREASE',
-    payload: product
-  };
-};
+    type: 'QTY_INCREASE',
+    payload: product,
+  }
+}
 
-export const quantityRemove = product => {
+export const qtyRemove = product => {
   return {
-    type: 'QUANTITY_DECREASE',
-    payload: product
-  };
-};
+    type: 'QTY_DECREASE',
+    payload: product,
+  }
+}
 
 export const removeAllProducts = () => {
   return {
-    type: 'REMOVE_ALL_PRODUCTS'
-  };
-};
+    type: 'REMOVE_ALL_PRODUCTS',
+  }
+}

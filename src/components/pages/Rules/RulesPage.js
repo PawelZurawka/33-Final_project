@@ -1,7 +1,7 @@
-import React from 'react';
-import './Rules.scss';
+import React from 'react'
+import './RulesPage.scss'
 
-const Rules = () => (
+const RulesPage = () => (
   <div className='rules'>
     <h1 className='rules__header'>Rules</h1>
     <ol>
@@ -82,6 +82,6 @@ const Rules = () => (
       </li>
     </ol>
   </div>
-);
+)
 
-export default Rules;
+export default RulesPage

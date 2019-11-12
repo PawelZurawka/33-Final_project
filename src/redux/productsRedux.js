@@ -6,8 +6,9 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 899.9,
-      quantity: 1,
-      image: '../../images/waterproof_jacket.jpg'
+      qty: 1,
+      //image: '../../images/waterproof_jacket.jpg',
+      image: '../../public/images/waterproof_jacket.jpg',
     },
     {
       id: 1,
@@ -15,8 +16,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 599.9,
-      quantity: 1,
-      image: '../../images/boots.jpg'
+      qty: 1,
+      image: '/images/boots.jpg',
     },
     {
       id: 2,
@@ -24,8 +25,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 1099.9,
-      quantity: 1,
-      image: '../../images/down_jacket.jpg'
+      qty: 1,
+      image: '../../public/images/down_jacket.jpg',
     },
     {
       id: 3,
@@ -33,8 +34,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 399.9,
-      quantity: 1,
-      image: '../../images/softshell_jacket.jpg'
+      qty: 1,
+      image: '/images/softshell_jacket.jpg',
     },
     {
       id: 4,
@@ -42,8 +43,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 299.9,
-      quantity: 1,
-      image: '../../images/climbing_shoes.jpg'
+      qty: 1,
+      image: '../../images/climbing_shoes.jpg',
     },
     {
       id: 5,
@@ -51,8 +52,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 499.9,
-      quantity: 1,
-      image: '../../images/backpack.jpg'
+      qty: 1,
+      image: '../../images/backpack.jpg',
     },
     {
       id: 6,
@@ -60,8 +61,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 259.9,
-      quantity: 1,
-      image: '../../images/sandals.jpg'
+      qty: 1,
+      image: '../../images/sandals.jpg',
     },
     {
       id: 7,
@@ -69,8 +70,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 99.9,
-      quantity: 1,
-      image: '../../images/t-shirt.jpg'
+      qty: 1,
+      image: '../../images/t-shirt.jpg',
     },
     {
       id: 8,
@@ -78,8 +79,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 149.9,
-      quantity: 1,
-      image: '../../images/stove.jpg'
+      qty: 1,
+      image: '../../images/stove.jpg',
     },
     {
       id: 9,
@@ -87,8 +88,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 49.9,
-      quantity: 1,
-      image: '../../images/socks.jpg'
+      qty: 1,
+      image: '../../images/socks.jpg',
     },
     {
       id: 10,
@@ -96,8 +97,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 79.9,
-      quantity: 1,
-      image: '../../images/headlamp.jpg'
+      qty: 1,
+      image: '../../images/headlamp.jpg',
     },
     {
       id: 11,
@@ -105,8 +106,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 459.9,
-      quantity: 1,
-      image: '../../images/sleeping_bag.jpg'
+      qty: 1,
+      image: '../../images/sleeping_bag.jpg',
     },
     {
       id: 12,
@@ -114,8 +115,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 1599.9,
-      quantity: 1,
-      image: '../../images/sport_watch.jpg'
+      qty: 1,
+      image: '../../images/sport_watch.jpg',
     },
     {
       id: 13,
@@ -123,8 +124,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 69.9,
-      quantity: 1,
-      image: '../../images/compass'
+      qty: 1,
+      image: '../../images/compass',
     },
     {
       id: 14,
@@ -132,8 +133,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 149.9,
-      quantity: 1,
-      image: '../../images/trekking_poles.jpg'
+      qty: 1,
+      image: '../../images/trekking_poles.jpg',
     },
     {
       id: 15,
@@ -141,8 +142,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 199.9,
-      quantity: 1,
-      image: '../../images/harness.jpg'
+      qty: 1,
+      image: '../../images/harness.jpg',
     },
     {
       id: 16,
@@ -150,8 +151,8 @@ export default function() {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
       price: 599.9,
-      quantity: 1,
-      image: '../../images/crampons.jpg'
-    }
-  ];
+      qty: 1,
+      image: '../../images/crampons.jpg',
+    },
+  ]
 }

@@ -1,8 +1,24 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Contact.scss';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './ContactPage.scss'
+//import { Card, CardText, Row, Col } from 'reactstrap';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Contact = () => (
+// <div>
+//   <PageTitle>Contact</PageTitle>
+//   <Row>
+//     <Col sm='6'>
+//       <Card body>
+//         <CardText>Your Favourite Outdoor Shop Ltd.</CardText>
+//         <CardText>9432 Division Street</CardText>
+//         <CardText>Stone Mountain, GA 30083</CardText>
+//         <CardText>Mobile Number: 207-914-3411</CardText>
+//       </Card>
+//     </Col>
+//   </Row>
+// </div>
+
+const ContactPage = () => (
   <div className='contact'>
     <h1 className='contact__header'>Contact us:</h1>
     <p className='contact__address'>
@@ -11,7 +27,6 @@ const Contact = () => (
     <p className='contact__email'>
       Email:
       <a href='mailto:outdoor-shop@outdoor.com' className='email-address'>
-        {' '}
         outdoor-shop@outdoor.com
       </a>
     </p>
@@ -35,6 +50,6 @@ const Contact = () => (
       </a>
     </div>
   </div>
-);
+)
 
-export default Contact;
+export default ContactPage
