@@ -6,6 +6,7 @@ import './Cart.scss'
 
 export class CartOrder extends React.Component {
   createOrder() {
+    console.log(this.props)
     return this.props.cart.added.map(product => {
       return (
         <div key={product.id}>
