@@ -2,6 +2,7 @@ import React from 'react'
 import { ProductsList } from '../ProductsList/ProductsList'
 import { sort } from '../../utils/sort'
 import { connect } from 'react-redux'
+import { Row, Col, Container, Button } from 'reactstrap'
 import './Home.scss'
 
 class Home extends React.Component {
@@ -22,48 +23,60 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className='home'>
-        <div className='home-sort col-sm-12 col-md-4 col-lg-3'>
-          <div className='home-sort-text-wrapper'>
-            <p className='home-sort-header'>Sort:</p>
-            <ul className='home-sort-list'>
-              <li
-                className='home-sort-list-item'
+      <>
+        <Container className='sort'>
+          <h4>Sort by:</h4>
+          <Row>
+            <Col>
+              <Button
+                color='link'
                 data-prop='name'
                 data-order='asc'
                 onClick={event => this.sort(event)}
               >
                 Name: A to Z
-              </li>
-              <li
-                className='home-sort-list-item'
+              </Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button
+                color='link'
                 data-prop='name'
                 data-order='desc'
                 onClick={event => this.sort(event)}
               >
                 Name: Z to A
-              </li>
-              <li
-                className='home-sort-list-item'
+              </Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button
+                color='link'
                 data-prop='price'
                 data-order='asc'
                 onClick={event => this.sort(event)}
               >
                 Price: low to high
-              </li>
-              <li
-                className='home-sort-list-item'
+              </Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button
+                color='link'
                 data-prop='price'
                 data-order='desc'
                 onClick={event => this.sort(event)}
               >
                 Price: high to low
-              </li>
-            </ul>
-          </div>
-        </div>
+              </Button>
+            </Col>
+          </Row>
+        </Container>
         <ProductsList sorted={this.state} />
-      </div>
+      </>
     )
   }
 }

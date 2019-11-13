@@ -4,7 +4,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
-//import './App.scss'
 
 // Import components
 import { MainLayout } from './components/layout/MainLayout/MainLayout'
