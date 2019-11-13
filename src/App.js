@@ -7,7 +7,7 @@ import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 //import './App.scss'
 
 // Import components
-import { MainLayout } from './components/MainLayout/MainLayout'
+import { MainLayout } from './components/layout/MainLayout/MainLayout'
 import Home from './components/Home/Home'
 import Faq from './components/FAQ/Faq'
 import Rules from './components/Rules/Rules'
