@@ -1,31 +1,28 @@
 import React from 'react'
 import CartOrder from './CartOrder'
 import CartSummary from './CartSummary'
-
-// Import styles
 import './Cart.scss'
 
 export default class Cart extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      summaryOrder: false,
+      orderSummary: false,
     }
   }
 
   initialSummary() {
     this.setState({
-      summaryOrder: true,
+      orderSummary: true,
     })
   }
 
   render() {
-    if (this.state.summaryOrder === false) {
+    if (this.state.orderSummary === false) {
       return (
         <div>
           <CartOrder />
           <div>
-            <div></div>
             <div>
               <button
                 onClick={() => {
@@ -38,7 +35,7 @@ export default class Cart extends React.Component {
           </div>
         </div>
       )
-    } else if (this.state.summaryOrder === true) {
+    } else if (this.state.orderSummary === true) {
       return <CartSummary />
     }
   }

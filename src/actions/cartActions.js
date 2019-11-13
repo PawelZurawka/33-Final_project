@@ -19,6 +19,13 @@ export const qtyRemove = product => {
   }
 }
 
+export const removeFromCart = product => {
+  return {
+    type: 'REMOVE_FROM_CART',
+    payload: product,
+  }
+}
+
 export const removeAllProducts = () => {
   return {
     type: 'REMOVE_ALL_PRODUCTS',

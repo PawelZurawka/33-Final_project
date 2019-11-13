@@ -37,9 +37,12 @@ export default function(state = { added: [], summary: 0 }, action) {
         summary: state.summary - action.payload.price,
       }
 
+    case 'REMOVE_FROM_CART':
+      return state.added.filter(product => product.id !== action.payload.id)
+
     case 'REMOVE_ALL_PRODUCTS':
       return {
-        add: [],
+        added: [],
         summary: 0,
       }
 

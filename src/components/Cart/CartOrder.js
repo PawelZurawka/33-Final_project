@@ -1,9 +1,7 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
-import { qtyAdd, qtyRemove } from '../../actions/cartActions'
+import { qtyAdd, qtyRemove, removeFromCart } from '../../actions/cartActions'
 import { connect } from 'react-redux'
-
-// Import styles
 import './Cart.scss'
 
 export class CartOrder extends React.Component {
@@ -25,6 +23,9 @@ export class CartOrder extends React.Component {
             <button onClick={() => this.props.qtyRemove(product)}>-</button>
             <p>{product.qty}</p>
             <button onClick={() => this.props.qtyAdd(product)}>+</button>
+            <button onClick={() => this.props.removeFromCart(product)}>
+              delete
+            </button>
           </div>
         </div>
       )
@@ -60,7 +61,7 @@ function mapStateToProps(state) {
 }
 
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({ qtyAdd, qtyRemove }, dispatch)
+  return bindActionCreators({ qtyAdd, qtyRemove, removeFromCart }, dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(CartOrder)
