@@ -21,7 +21,7 @@ const FAQ = () => (
           justo sollicitudin euismod. Proin eleifend mauris felis, at dignissim
           sapien lobortis vel. Proin nisi velit, tempus non tempor at, auctor eu
           metus. Nulla facilisis orci tempus diam cursus, et congue urna
-          finibus. Ut maximus efficitur nula eget mattis.
+          finibus. Ut maximus efficitur nulffca eget mattis.
         </p>
       </li>
       <li>
