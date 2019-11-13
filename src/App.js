@@ -9,7 +9,7 @@ import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 // Import components
 import { MainLayout } from './components/layout/MainLayout/MainLayout'
 import Home from './components/Home/Home'
-import Faq from './components/FAQ/Faq'
+import FAQ from './components/FAQ/FAQ'
 import Rules from './components/Rules/Rules'
 import Contact from './components/Contact/Contact'
 import NotFound from './components/NotFound/NotFound'
@@ -23,7 +23,7 @@ class App extends React.Component {
         <MainLayout>
           <Switch>
             <Route exact path={'/'} component={Home} />
-            <Route exact path={'/faq'} component={Faq} />
+            <Route exact path={'/faq'} component={FAQ} />
             <Route exact path={'/rules'} component={Rules} />
             <Route exact path={'/contact'} component={Contact} />
             <Route exact path={'/cart'} component={Cart} />

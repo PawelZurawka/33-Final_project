@@ -2,8 +2,6 @@ import React from 'react'
 import { ProductsList } from '../ProductsList/ProductsList'
 import { sort } from '../../utils/sort'
 import { connect } from 'react-redux'
-
-// Import styles
 import './Home.scss'
 
 class Home extends React.Component {

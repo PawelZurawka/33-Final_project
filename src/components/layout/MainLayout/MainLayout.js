@@ -1,13 +1,13 @@
 import React from 'react'
 import PageContainer from '../PageContainer/PageContainer'
-import { Header } from '../../Header/Header'
-import { Footer } from '../../Footer/Footer'
+import NavBar from '../../NavBar/NavBar'
+import Footer from '../../Footer/Footer'
 
 export class MainLayout extends React.Component {
   render() {
     return (
       <PageContainer>
-        <Header />
+        <NavBar />
         {this.props.children}
         <Footer />
       </PageContainer>
