@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProductsList } from '../ProductsList/ProductsList'
-import { sort } from './sort'
+import { sort } from '../../utils/sort'
 import { connect } from 'react-redux'
 
 // Import styles
