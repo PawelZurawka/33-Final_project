@@ -1,6 +1,9 @@
 import React from 'react'
 import Logo from '../../components/common/Logo/Logo'
 import MainMenu from '../../components/layout/MainMenu/MainMenu'
+import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './NavBar.scss'
 
 class NavBar extends React.Component {
@@ -18,7 +21,12 @@ class NavBar extends React.Component {
     return (
       <nav className='navbar'>
         <Logo />
-        <MainMenu links={links} />
+        <div className='navbar-wrapper'>
+          <MainMenu links={links} />
+          <NavLink className='cart-icon' to='/cart' activeClassName='active'>
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </NavLink>
+        </div>
       </nav>
     )
   }
