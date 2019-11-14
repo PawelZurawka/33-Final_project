@@ -30,7 +30,7 @@ export class ProductsList extends React.Component {
     const { currentPage } = this.state
     return (
       <div>
-        <div>
+        <section className='products__list'>
           {this.props.sorted.products
             .slice(this.state.currentProducts[0], this.state.currentProducts[1])
             .map((product, i) => {
@@ -47,7 +47,7 @@ export class ProductsList extends React.Component {
                 />
               )
             })}
-        </div>
+        </section>
         <div>
           <Pagination>
             <PaginationItem disabled={currentPage <= 0}>

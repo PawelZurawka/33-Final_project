@@ -1,9 +1,10 @@
 @import "../../../styles/settings.scss";
 
 .page-title {
-  margin: $base-size 0;
+  margin: $base-size * 2;
   font-size: $base-size * 4;
   font-weight: 600;
   position: relative;
   color: $color-text;
+  text-align: center;
 }

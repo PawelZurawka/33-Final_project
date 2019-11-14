@@ -6,7 +6,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 
 // Import components
-import { MainLayout } from './components/layout/MainLayout/MainLayout'
+import MainLayout from './components/layout/MainLayout/MainLayout'
 import Home from './components/Home/Home'
 import FAQ from './components/FAQ/FAQ'
 import Rules from './components/Rules/Rules'

@@ -153,5 +153,14 @@ export default function() {
       qty: 1,
       image: '../../images/crampons.jpg',
     },
+    {
+      id: 17,
+      name: 'Trousers',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+      price: 179.9,
+      qty: 1,
+      image: '../../images/trousers.jpg',
+    },
   ]
 }

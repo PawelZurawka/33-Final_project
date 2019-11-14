@@ -6,7 +6,6 @@ import './Cart.scss'
 
 export class CartOrder extends React.Component {
   createOrder() {
-    console.log(this.props)
     return this.props.cart.added.map(product => {
       return (
         <div key={product.id}>
@@ -24,9 +23,9 @@ export class CartOrder extends React.Component {
             <button onClick={() => this.props.qtyRemove(product)}>-</button>
             <p>{product.qty}</p>
             <button onClick={() => this.props.qtyAdd(product)}>+</button>
-            <button onClick={() => this.props.removeFromCart(product)}>
+            {/* <button onClick={() => this.props.removeFromCart(product)}>
               delete
-            </button>
+            </button> */}
           </div>
         </div>
       )

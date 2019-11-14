@@ -1,0 +1,8 @@
+@import '../../../styles//settings.scss';
+
+.carousel {
+  margin-bottom: 25px;
+  &-inner {
+    border-radius: $radius;
+  }
+}

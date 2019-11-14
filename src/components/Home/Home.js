@@ -2,7 +2,8 @@ import React from 'react'
 import { ProductsList } from '../ProductsList/ProductsList'
 import { sort } from '../../utils/sort'
 import { connect } from 'react-redux'
-import { Row, Col, Container, Button } from 'reactstrap'
+import { Container, Button, Row, Col } from 'reactstrap'
+import Carousel from '../features/Carousel/Carousel'
 import './Home.scss'
 
 class Home extends React.Component {
@@ -23,60 +24,47 @@ class Home extends React.Component {
 
   render() {
     return (
-      <>
-        <Container className='sort'>
-          <h4>Sort by:</h4>
-          <Row>
-            <Col>
-              <Button
-                color='link'
-                data-prop='name'
-                data-order='asc'
-                onClick={event => this.sort(event)}
-              >
-                Name: A to Z
-              </Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Button
-                color='link'
-                data-prop='name'
-                data-order='desc'
-                onClick={event => this.sort(event)}
-              >
-                Name: Z to A
-              </Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Button
-                color='link'
-                data-prop='price'
-                data-order='asc'
-                onClick={event => this.sort(event)}
-              >
-                Price: low to high
-              </Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Button
-                color='link'
-                data-prop='price'
-                data-order='desc'
-                onClick={event => this.sort(event)}
-              >
-                Price: high to low
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-        <ProductsList sorted={this.state} />
-      </>
+      <Container>
+        <Carousel />
+        <Row>
+          <Col xs={3}>
+            <h4>Sort by:</h4>
+            <Button
+              color='primary'
+              data-prop='name'
+              data-order='asc'
+              onClick={event => this.sort(event)}
+            >
+              Name: A to Z
+            </Button>
+            <Button
+              data-prop='name'
+              data-order='desc'
+              onClick={event => this.sort(event)}
+            >
+              Name: Z to A
+            </Button>
+            <Button
+              color='primary'
+              data-prop='price'
+              data-order='asc'
+              onClick={event => this.sort(event)}
+            >
+              Price: low to high
+            </Button>
+            <Button
+              data-prop='price'
+              data-order='desc'
+              onClick={event => this.sort(event)}
+            >
+              Price: high to low
+            </Button>
+          </Col>
+          <Col xs={9}>
+            <ProductsList sorted={this.state} />
+          </Col>
+        </Row>
+      </Container>
     )
   }
 }
