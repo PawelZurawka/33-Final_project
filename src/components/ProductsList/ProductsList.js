@@ -49,7 +49,7 @@ export class ProductsList extends React.Component {
             })}
         </section>
         <div>
-          <Pagination>
+          <Pagination className='pagination'>
             <PaginationItem disabled={currentPage <= 0}>
               <PaginationLink
                 onClick={e => this.handleClick(e, currentPage - 1)}

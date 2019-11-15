@@ -1,5 +1,27 @@
+@import "../../styles/settings.scss";
+
 .products__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  margin: 0 auto;
+}
+
+.page-link {
+  color: $color-text-light;
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    color: $color-main;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: $color-main;
+  border-color: $color-main;
 }
