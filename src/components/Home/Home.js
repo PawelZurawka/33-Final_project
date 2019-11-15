@@ -2,7 +2,7 @@ import React from 'react'
 import { ProductsList } from '../ProductsList/ProductsList'
 import { sort } from '../../utils/sort'
 import { connect } from 'react-redux'
-import { Container, Button, Row, Col } from 'reactstrap'
+import { Button, Row, Col } from 'reactstrap'
 import Carousel from '../features/Carousel/Carousel'
 import './Home.scss'
 
@@ -24,7 +24,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Container>
+      <>
         <Carousel />
         <Row>
           <Col xs={3}>
@@ -64,7 +64,7 @@ class Home extends React.Component {
             <ProductsList sorted={this.state} />
           </Col>
         </Row>
-      </Container>
+      </>
     )
   }
 }
