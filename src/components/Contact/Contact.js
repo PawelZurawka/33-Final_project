@@ -3,8 +3,7 @@ import { CardText, Card, CardLink } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PageTitle from '../../../src/components/common/PageTitle/PageTitle'
 import {
-  faFacebook,
-  faInstagram,
+  faFacebookF,
   faTwitter,
   faPinterest,
 } from '@fortawesome/free-brands-svg-icons'
@@ -15,12 +14,14 @@ const ContactPage = () => {
   return (
     <Card className='contact'>
       <PageTitle>Contact</PageTitle>
-      <CardText>Outdoor Shop Ltd.</CardText>
       <CardText>
-        Address: 121 King Street, Melbourne Victoria 3000 Australia
+        <b>Outdoor Shop Ltd.</b>
       </CardText>
       <CardText>
-        E-mail:{' '}
+        <b>Address:</b> 121 King Street, Melbourne Victoria 3000 Australia
+      </CardText>
+      <CardText>
+        <b>E-mail:</b>{' '}
         <CardLink
           href='mailto:outdoor-shop@outdoor.com'
           className='email-address'
@@ -29,14 +30,11 @@ const ContactPage = () => {
         </CardLink>
       </CardText>
       <CardText>
-        Phone Number: <a href='tel:+54585256758'> +54 585 256 758</a>
+        <b>Phone Number:</b> <a href='tel:+54585256758'> +54 585 256 758</a>
       </CardText>
-      <CardText>
+      <CardText className='contact__icons-wrapper'>
         <a href='facebook.com' className='contact__facebook contact__icon'>
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a href='instagram.com' className='contact__instagram contact__icon'>
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faFacebookF} />
         </a>
         <a href='twitter.com' className='contact__twitter contact__icon'>
           <FontAwesomeIcon icon={faTwitter} />
