@@ -14,7 +14,7 @@ class Footer extends React.Component {
   render() {
     const { links } = this.state
     return (
-      <nav className={'footer'}>
+      <nav className='footer'>
         <span className='footer__caption'>
           2019{' '}
           <a

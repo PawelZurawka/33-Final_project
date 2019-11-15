@@ -24,6 +24,13 @@ const items = [
     header: 'Tincidunt nunc',
     key: '3',
   },
+  {
+    src: '../../images/slide4.jpg',
+    altText: 'Slide 4',
+    caption: 'Sed nisi',
+    header: 'Elementum eu facilisis',
+    key: '4',
+  },
 ]
 
 const Carousel = () => <UncontrolledCarousel items={items} />

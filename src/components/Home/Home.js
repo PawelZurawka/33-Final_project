@@ -27,10 +27,11 @@ class Home extends React.Component {
       <>
         <Carousel />
         <Row>
-          <Col xs={3}>
-            <h4>Sort by:</h4>
+          <Col className='sort' xs={3}>
+            <h4 className='sort__header'>Sort by:</h4>
             <Button
-              color='primary'
+              className='sort__btn'
+              color='link'
               data-prop='name'
               data-order='asc'
               onClick={event => this.sort(event)}
@@ -38,6 +39,8 @@ class Home extends React.Component {
               Name: A to Z
             </Button>
             <Button
+              className='sort__btn'
+              color='link'
               data-prop='name'
               data-order='desc'
               onClick={event => this.sort(event)}
@@ -45,7 +48,8 @@ class Home extends React.Component {
               Name: Z to A
             </Button>
             <Button
-              color='primary'
+              className='sort__btn'
+              color='link'
               data-prop='price'
               data-order='asc'
               onClick={event => this.sort(event)}
@@ -53,6 +57,8 @@ class Home extends React.Component {
               Price: low to high
             </Button>
             <Button
+              className='sort__btn'
+              color='link'
               data-prop='price'
               data-order='desc'
               onClick={event => this.sort(event)}

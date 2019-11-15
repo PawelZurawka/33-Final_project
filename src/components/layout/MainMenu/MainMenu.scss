@@ -9,4 +9,14 @@
   li {
     margin: 0 $base-size;
   }
+  a {
+    font-size: $base-size * 1.8;
+    &:focus {
+      font-weight: bold;
+      color: $color-main;
+    }
+    &:hover {
+      color: $color-main;
+    }
+  }
 }

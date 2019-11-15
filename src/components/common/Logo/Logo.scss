@@ -1,13 +1,12 @@
 @import "../../../styles/settings.scss";
-
 .logo {
-  font-weight: bold;
-  font-size: $base-size * 2;
-  color: $color-text;
-  margin: $base-size;
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &__company-name {
+    font-weight: bold;
+    font-size: $base-size * 2;
+    color: $color-text;
+    margin: $base-size;
   }
 }
