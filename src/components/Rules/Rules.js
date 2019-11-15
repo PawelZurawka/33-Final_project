@@ -1,13 +1,16 @@
 import React from 'react'
 import PageTitle from '../common/PageTitle/PageTitle'
+import { Card } from 'reactstrap'
 import './Rules.scss'
 
 const Rules = () => (
-  <div>
+  <Card className='rules'>
     <PageTitle>Rules</PageTitle>
     <ol>
       <li>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 className='rules__header'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
@@ -25,7 +28,9 @@ const Rules = () => (
         </p>
       </li>
       <li>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 className='rules__header'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
@@ -43,7 +48,9 @@ const Rules = () => (
         </p>
       </li>
       <li>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 className='rules__header'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
@@ -61,7 +68,9 @@ const Rules = () => (
         </p>
       </li>
       <li>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 className='rules__header'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
@@ -79,7 +88,9 @@ const Rules = () => (
         </p>
       </li>
       <li>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 className='rules__header'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
@@ -97,7 +108,7 @@ const Rules = () => (
         </p>
       </li>
     </ol>
-  </div>
+  </Card>
 )
 
 export default Rules

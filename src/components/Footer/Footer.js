@@ -21,6 +21,7 @@ class Footer extends React.Component {
             href='https://github.com/PawelZurawka?tab=repositories'
             target='_blank'
             rel='noopener noreferrer'
+            className='footer__author-name'
           >
             Paweł Żurawka
           </a>

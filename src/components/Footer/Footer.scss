@@ -3,4 +3,10 @@
   align-items: baseline;
   justify-content: space-between;
   margin-top: 40px;
+  &__author-name {
+    font-style: italic;
+  }
+  &__caption {
+    font-style: italic;
+  }
 }
