@@ -14,20 +14,20 @@ import {
   CardText,
   Badge,
 } from 'reactstrap'
-import BackButton from '../../components/common/BackButton/BackButton'
+import ButtonBack from '../../components/common/ButtonBack/ButtonBack'
 import Button from '../common/Button/Button'
 import './SingleProduct.scss'
 
 export class SingleProduct extends React.Component {
   constructor(props) {
     super(props)
-    this.state = [] //{}
+    this.state = {}
   }
 
   render() {
     return (
       <Container>
-        <BackButton />
+        <ButtonBack />
         <Col className='single-product' md={12}>
           <Card>
             <Row>
@@ -63,7 +63,6 @@ export class SingleProduct extends React.Component {
                   </CardText>
                 </CardBody>
                 <Button
-                  color='info'
                   onClick={() =>
                     this.props.addToCart(
                       this.props.products[this.props.match.params.id]

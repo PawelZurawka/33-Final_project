@@ -12,6 +12,9 @@
   cursor: pointer;
   opacity: 1;
   transition: $transition;
+  &:focus {
+    outline: none;
+  }
 
   &--primary {
     color: $color-primary;
