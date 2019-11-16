@@ -15,7 +15,7 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    transition: 0.5s;
+    transition: $transition;
     color: $color-text-light;
     margin: 0 5px;
   }

@@ -9,7 +9,7 @@ import './SingleProduct.scss'
 export class SingleProduct extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = [] //{}
   }
 
   render() {
