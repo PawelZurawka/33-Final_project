@@ -14,7 +14,7 @@ import {
   CardText,
   Badge,
 } from 'reactstrap'
-import ButtonBack from '../../components/common/ButtonBack/ButtonBack'
+import ButtonBack from '../common/ButtonBack/ButtonBack'
 import Button from '../common/Button/Button'
 import './SingleProduct.scss'
 
@@ -27,14 +27,11 @@ export class SingleProduct extends React.Component {
   render() {
     return (
       <Container>
-        <ButtonBack />
         <Col className='single-product' md={12}>
           <Card>
             <Row>
               <Col md={6}>
-                <Badge>
-                  {this.props.products[this.props.match.params.id].tag}
-                </Badge>
+                <ButtonBack />
                 <CardImg
                   src={this.props.products[this.props.match.params.id].image}
                   alt='product'
@@ -42,6 +39,9 @@ export class SingleProduct extends React.Component {
               </Col>
               <Col md={6}>
                 <CardBody>
+                  <Badge>
+                    {this.props.products[this.props.match.params.id].tag}
+                  </Badge>
                   <CardTitle>
                     {this.props.products[this.props.match.params.id].name}
                   </CardTitle>

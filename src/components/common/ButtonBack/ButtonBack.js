@@ -1,18 +1,20 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-
-import Button from '../Button/Button'
-import './ButtonBack.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import './ButtonBack.scss'
 
 class ButtonBack extends React.Component {
   render() {
     return (
-      <Button className='btn__back' onClick={this.props.history.goBack}>
-        <FontAwesomeIcon className='btn__back-icon' icon={faChevronLeft} />
+      <button
+        className='btn-back'
+        variant='danger'
+        onClick={this.props.history.goBack}
+      >
+        <FontAwesomeIcon className='btn-back__icon' icon={faChevronLeft} />
         Back
-      </Button>
+      </button>
     )
   }
 }

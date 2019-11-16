@@ -33,13 +33,28 @@ const ContactPage = () => {
         <b>Phone Number:</b> <a href='tel:+54585256758'> +54 585 256 758</a>
       </CardText>
       <CardText className='contact__icons-wrapper'>
-        <a href='facebook.com' className='contact__facebook contact__icon'>
+        <a
+          href='https://www.facebook.com'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='contact__facebook contact__icon'
+        >
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
-        <a href='twitter.com' className='contact__twitter contact__icon'>
+        <a
+          href='https://www.twitter.com'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='contact__twitter contact__icon'
+        >
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href='pinterest.com' className='contact__pinterest contact__icon'>
+        <a
+          href='https://www.pinterest.com'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='contact__pinterest contact__icon'
+        >
           <FontAwesomeIcon icon={faPinterest} />
         </a>
       </CardText>
