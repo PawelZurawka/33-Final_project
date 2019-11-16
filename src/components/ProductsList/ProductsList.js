@@ -44,6 +44,7 @@ export class ProductsList extends React.Component {
                   price={product.price}
                   productInfo={product.productInfo}
                   image={product.image}
+                  tag={product.tag}
                 />
               )
             })}

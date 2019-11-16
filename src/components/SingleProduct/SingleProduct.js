@@ -2,8 +2,20 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { addToCart } from '../../actions/productsActions'
 import { connect } from 'react-redux'
-
-// Import styles
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardImg,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Badge,
+} from 'reactstrap'
+import BackButton from '../../components/common/BackButton/BackButton'
+import Button from '../common/Button/Button'
 import './SingleProduct.scss'
 
 export class SingleProduct extends React.Component {
@@ -14,35 +26,57 @@ export class SingleProduct extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <div>
-            <img
-              src={this.props.products[this.props.match.params.id].image}
-              alt='product'
-            />
-          </div>
-
-          <div>
-            <p>{this.props.products[this.props.match.params.id].name}</p>
-            <p>
-              ${' '}
-              {this.props.products[this.props.match.params.id].price.toFixed(2)}
-            </p>
-            <p>{this.props.products[this.props.match.params.id].description}</p>
-
-            <button
-              onClick={() =>
-                this.props.addToCart(
-                  this.props.products[this.props.match.params.id]
-                )
-              }
-            >
-              Add to cart
-            </button>
-          </div>
-        </div>
-      </div>
+      <Container>
+        <BackButton />
+        <Col className='single-product' md={12}>
+          <Card>
+            <Row>
+              <Col md={6}>
+                <Badge>
+                  {this.props.products[this.props.match.params.id].tag}
+                </Badge>
+                <CardImg
+                  src={this.props.products[this.props.match.params.id].image}
+                  alt='product'
+                ></CardImg>
+              </Col>
+              <Col md={6}>
+                <CardBody>
+                  <CardTitle>
+                    {this.props.products[this.props.match.params.id].name}
+                  </CardTitle>
+                  <CardSubtitle>
+                    ${' '}
+                    {this.props.products[
+                      this.props.match.params.id
+                    ].price.toFixed(2)}
+                  </CardSubtitle>
+                  <CardText>
+                    {
+                      this.props.products[this.props.match.params.id]
+                        .description
+                    }
+                    {
+                      this.props.products[this.props.match.params.id]
+                        .description
+                    }
+                  </CardText>
+                </CardBody>
+                <Button
+                  color='info'
+                  onClick={() =>
+                    this.props.addToCart(
+                      this.props.products[this.props.match.params.id]
+                    )
+                  }
+                >
+                  Add to cart
+                </Button>
+              </Col>
+            </Row>
+          </Card>
+        </Col>
+      </Container>
     )
   }
 }

@@ -4,7 +4,7 @@ import './Carousel.scss'
 
 const items = [
   {
-    src: '../../images/slide3.jpg',
+    src: '../../images/slide1.jpg',
     altText: 'Slide 1',
     caption: 'Nullam vehicula',
     header: 'Lorem ipsum',
@@ -18,7 +18,7 @@ const items = [
     key: '2',
   },
   {
-    src: '../../images/slide1.jpg',
+    src: '../../images/slide3.jpg',
     altText: 'Slide 3',
     caption: 'Amet nisl',
     header: 'Tincidunt nunc',
