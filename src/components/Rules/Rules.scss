@@ -1,7 +1,9 @@
-.rules .page-title {
-  margin-bottom: 0;
-}
-
-.rules__header {
-  margin: 40px 0 20px 0;
+.rules {
+  padding: 30px;
+  .page-title {
+    margin: 0;
+  }
+  &__header {
+    margin: 40px 0 20px 0;
+  }
 }

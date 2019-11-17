@@ -1,7 +1,9 @@
-.faq .page-title {
-  margin-bottom: 0;
-}
-
-.faq__header {
-  margin: 40px 0 20px 0;
+.faq {
+  padding: 30px;
+  .page-title {
+    margin: 0;
+  }
+  &__header {
+    margin: 40px 0 20px 0;
+  }
 }

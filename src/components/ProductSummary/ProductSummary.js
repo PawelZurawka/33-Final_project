@@ -7,7 +7,7 @@ export const ProductSummary = props => (
   <Col className='product-summary' md={5}>
     <Link to={'/product/' + props.index} index={props.index}>
       <Card>
-        <Badge>{props.tag}</Badge>
+        {props.tag ? <Badge>{props.tag}</Badge> : <span></span>}
         <CardImg src={props.image} alt='product' />
         <CardTitle>{props.name}</CardTitle>
         <CardSubtitle>$ {props.price.toFixed(2)}</CardSubtitle>
