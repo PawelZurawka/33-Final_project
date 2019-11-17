@@ -7,11 +7,7 @@ import './ButtonBack.scss'
 class ButtonBack extends React.Component {
   render() {
     return (
-      <button
-        className='btn-back'
-        variant='danger'
-        onClick={this.props.history.goBack}
-      >
+      <button className='btn-back' onClick={this.props.history.goBack}>
         <FontAwesomeIcon className='btn-back__icon' icon={faChevronLeft} />
         Back
       </button>

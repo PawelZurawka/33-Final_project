@@ -32,6 +32,9 @@ export class SingleProduct extends React.Component {
             <Row>
               <Col md={6}>
                 <ButtonBack />
+                <Badge>
+                  {this.props.products[this.props.match.params.id].tag}
+                </Badge>
                 <CardImg
                   src={this.props.products[this.props.match.params.id].image}
                   alt='product'
@@ -39,9 +42,6 @@ export class SingleProduct extends React.Component {
               </Col>
               <Col md={6}>
                 <CardBody>
-                  <Badge>
-                    {this.props.products[this.props.match.params.id].tag}
-                  </Badge>
                   <CardTitle>
                     {this.props.products[this.props.match.params.id].name}
                   </CardTitle>
@@ -63,6 +63,7 @@ export class SingleProduct extends React.Component {
                   </CardText>
                 </CardBody>
                 <Button
+                  variant='primary'
                   onClick={() =>
                     this.props.addToCart(
                       this.props.products[this.props.match.params.id]

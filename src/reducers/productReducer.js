@@ -18,7 +18,7 @@ export default function() {
       price: 599.9,
       qty: 1,
       image: '../../images/boots.jpg',
-      tag: 'Last One',
+      tag: 'Sale',
     },
     {
       id: 2,
@@ -68,7 +68,7 @@ export default function() {
       price: 259.9,
       qty: 1,
       image: '../../images/sandals.jpg',
-      tag: '',
+      tag: 'New',
     },
     {
       id: 7,
@@ -88,7 +88,7 @@ export default function() {
       price: 149.9,
       qty: 1,
       image: '../../images/stove.jpg',
-      tag: '',
+      tag: 'Sale',
     },
     {
       id: 9,
@@ -118,7 +118,7 @@ export default function() {
       price: 459.9,
       qty: 1,
       image: '../../images/sleeping_bag.jpg',
-      tag: '',
+      tag: 'New',
     },
     {
       id: 12,
@@ -128,7 +128,7 @@ export default function() {
       price: 1599.9,
       qty: 1,
       image: '../../images/sport_watch.jpg',
-      tag: '',
+      tag: 'New',
     },
     {
       id: 13,
@@ -148,7 +148,7 @@ export default function() {
       price: 149.9,
       qty: 1,
       image: '../../images/trekking_poles.jpg',
-      tag: '',
+      tag: 'Sale',
     },
     {
       id: 15,
@@ -178,7 +178,7 @@ export default function() {
       price: 179.9,
       qty: 1,
       image: '../../images/trousers.jpg',
-      tag: '',
+      tag: 'New',
     },
   ]
 }
