@@ -61,17 +61,17 @@ export class SingleProduct extends React.Component {
                         .description
                     }
                   </CardText>
+                  <Button
+                    variant='primary'
+                    onClick={() =>
+                      this.props.addToCart(
+                        this.props.products[this.props.match.params.id]
+                      )
+                    }
+                  >
+                    Add to cart
+                  </Button>
                 </CardBody>
-                <Button
-                  variant='primary'
-                  onClick={() =>
-                    this.props.addToCart(
-                      this.props.products[this.props.match.params.id]
-                    )
-                  }
-                >
-                  Add to cart
-                </Button>
               </Col>
             </Row>
           </Card>

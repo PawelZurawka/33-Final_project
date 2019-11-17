@@ -4,7 +4,7 @@ export default function() {
       id: 0,
       name: 'Waterproof Jacket',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 899.9,
       qty: 1,
       image: '../../images/waterproof_jacket.jpg',
@@ -14,7 +14,7 @@ export default function() {
       id: 1,
       name: 'Boots',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 599.9,
       qty: 1,
       image: '../../images/boots.jpg',
@@ -24,7 +24,7 @@ export default function() {
       id: 2,
       name: 'Down Jacket',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 1099.9,
       qty: 1,
       image: '../../images/down_jacket.jpg',
@@ -34,7 +34,7 @@ export default function() {
       id: 3,
       name: 'Softshell Jacket',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 399.9,
       qty: 1,
       image: '../../images/softshell_jacket.jpg',
@@ -44,7 +44,7 @@ export default function() {
       id: 4,
       name: 'Climbing Shoes',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 299.9,
       qty: 1,
       image: '../../images/climbing_shoes.jpg',
@@ -54,7 +54,7 @@ export default function() {
       id: 5,
       name: 'Backpack',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 499.9,
       qty: 1,
       image: '../../images/backpack.jpg',
@@ -64,7 +64,7 @@ export default function() {
       id: 6,
       name: 'Sandals',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 259.9,
       qty: 1,
       image: '../../images/sandals.jpg',
@@ -74,7 +74,7 @@ export default function() {
       id: 7,
       name: 'T-shirt',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 99.9,
       qty: 1,
       image: '../../images/t-shirt.jpg',
@@ -84,7 +84,7 @@ export default function() {
       id: 8,
       name: 'Stove',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 149.9,
       qty: 1,
       image: '../../images/stove.jpg',
@@ -94,7 +94,7 @@ export default function() {
       id: 9,
       name: 'Socks',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 49.9,
       qty: 1,
       image: '../../images/socks.jpg',
@@ -104,7 +104,7 @@ export default function() {
       id: 10,
       name: 'Headlamp',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 79.9,
       qty: 1,
       image: '../../images/headlamp.jpg',
@@ -114,7 +114,7 @@ export default function() {
       id: 11,
       name: 'Sleeping Bag',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 459.9,
       qty: 1,
       image: '../../images/sleeping_bag.jpg',
@@ -124,7 +124,7 @@ export default function() {
       id: 12,
       name: 'Sport Watch',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 1599.9,
       qty: 1,
       image: '../../images/sport_watch.jpg',
@@ -134,7 +134,7 @@ export default function() {
       id: 13,
       name: 'Compass',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 69.9,
       qty: 1,
       image: '../../images/compass.jpg',
@@ -144,7 +144,7 @@ export default function() {
       id: 14,
       name: 'Trekking Poles',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 149.9,
       qty: 1,
       image: '../../images/trekking_poles.jpg',
@@ -154,7 +154,7 @@ export default function() {
       id: 15,
       name: 'Harness',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 199.9,
       qty: 1,
       image: '../../images/harness.jpg',
@@ -164,7 +164,7 @@ export default function() {
       id: 16,
       name: 'Crampons',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 599.9,
       qty: 1,
       image: '../../images/crampons.jpg',
@@ -174,7 +174,7 @@ export default function() {
       id: 17,
       name: 'Trousers',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nibh sit amet ipsum mollis condimentum.Nullam quis arcu nec nisi pellentesque aliquet. Phasellus mattis leo vitae tellus scelerisque, at mattis ante pretium. Pellentesque a dui finibus, vulputate massa et, tincidunt orci.',
       price: 179.9,
       qty: 1,
       image: '../../images/trousers.jpg',
