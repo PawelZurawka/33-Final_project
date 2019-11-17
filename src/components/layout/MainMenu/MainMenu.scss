@@ -1,4 +1,4 @@
-@import "../../../styles/settings.scss";
+@import "../../../styles//settings.scss";
 
 .main-menu {
   display: flex;
@@ -9,6 +9,6 @@
     margin: 0 $base-size;
   }
   a {
-    font-size: $base-size * 1.8;
+    font-size: $base-size * 1.7;
   }
 }

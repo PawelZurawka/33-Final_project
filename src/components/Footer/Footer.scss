@@ -1,3 +1,5 @@
+@import "../../styles/settings.scss";
+
 .footer {
   display: flex;
   align-items: baseline;
@@ -8,5 +10,8 @@
   }
   &__caption {
     font-style: italic;
+  }
+  a {
+    font-size: $base-size * 1.4;
   }
 }
