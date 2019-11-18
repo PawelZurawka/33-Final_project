@@ -38,4 +38,9 @@
     font-weight: bold;
     font-size: $base-size * 1.5;
   }
+  &__summary-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px;
+  }
 }

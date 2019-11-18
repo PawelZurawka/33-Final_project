@@ -63,6 +63,11 @@ export class CartOrder extends React.Component {
         <div className='cart-order__total'>
           Total: $ {this.props.cart.summary.toFixed(2)}
         </div>
+        <div className='cart-order__summary-btn'>
+          <Link to='/cartsummary'>
+            <Button>To summary</Button>
+          </Link>
+        </div>
       </>
     )
   }
