@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Row, Col, Card } from 'reactstrap'
 import PageTitle from '../common/PageTitle/PageTitle'
 import ButtonBack from '../common/ButtonBack/ButtonBack'
-import Button from '../common/Button/Button'
+import Modal from '../features/Modal/Modal'
 import './CartSummary.scss'
 
 export class CartSummary extends React.Component {
@@ -36,7 +36,7 @@ export class CartSummary extends React.Component {
         </span>
         <div className='cart-summary__btns'>
           <ButtonBack></ButtonBack>
-          <Button>Accept order</Button>
+          <Modal></Modal>
         </div>
       </Card>
     )
