@@ -18,10 +18,8 @@ const MyModal = props => {
         className={className}
         centered={true}
       >
-        <ModalHeader toggle={toggle}>
-          Dear Client, thank you for shopping!
-        </ModalHeader>
-        <ModalBody>Your order has been accepted.</ModalBody>
+        <ModalHeader toggle={toggle}>Your order has been accepted.</ModalHeader>
+        <ModalBody>See you next time!</ModalBody>
         <ModalFooter>
           <Button onClick={toggle}>Close</Button>
         </ModalFooter>
