@@ -2,31 +2,48 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { qtyAdd, qtyRemove, removeFromCart } from '../../actions/cartActions'
 import { connect } from 'react-redux'
-import './Cart.scss'
+import { Link } from 'react-router-dom'
+import { Row, Col, Input } from 'reactstrap'
+import Button from '../common/Button/Button'
+import cutText from '../../utils/cutText/cutText'
+import PageTitle from '../common/PageTitle/PageTitle'
+import './CartOrder.scss'
 
 export class CartOrder extends React.Component {
   createOrder() {
     return this.props.cart.added.map(product => {
       return (
         <div key={product.id}>
-          <div>
-            <img src={product.image} alt='product' />
-          </div>
+          <Row className='cart-order'>
+            <Col md={2}>
+              <Link to={'product/' + product.id}>
+                <img
+                  className='cart-order__image'
+                  src={product.image}
+                  alt='product'
+                />
+              </Link>
+            </Col>
+            <Col md={5}>
+              <h2 className='cart-order__name'>{product.name}</h2>
+              <p className='cart-order__description'>
+                {cutText(product.description, 150)}
+              </p>
+            </Col>
+            <Col md={2}>$ {(product.price * product.qty).toFixed(2)}</Col>
+            <Col md={3}>
+              <div className='cart-order__btns-wrapper'>
+                <Button onClick={() => this.props.qtyRemove(product)}>-</Button>
+                <span className='cart-order__qty'>{product.qty}</span>
+                <Button onClick={() => this.props.qtyAdd(product)}>+</Button>
 
-          <div>
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-          </div>
-
-          <div>${(product.price * product.qty).toFixed(2)}</div>
-          <div>
-            <button onClick={() => this.props.qtyRemove(product)}>-</button>
-            <p>{product.qty}</p>
-            <button onClick={() => this.props.qtyAdd(product)}>+</button>
-            {/* <button onClick={() => this.props.removeFromCart(product)}>
-              delete
-            </button> */}
-          </div>
+                <Button onClick={() => this.props.removeFromCart(product)}>
+                  delete
+                </Button>
+              </div>
+              <Row></Row>
+            </Col>
+          </Row>
         </div>
       )
     })
@@ -34,22 +51,19 @@ export class CartOrder extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Your shopping:</h1>
-
+      <>
+        <PageTitle>Your shopping:</PageTitle>
         {this.createOrder()}
-
-        <div>
-          <div></div>
-          <div>
-            <input placeholder='Enter discount code' />
-          </div>
+        <div className='cart-order__discount-wrapper'>
+          <Input
+            className='cart-order__discount'
+            placeholder='Enter discount code'
+          />
         </div>
-        <div>
-          <div></div>
-          <div>Total: $ {this.props.cart.summary.toFixed(2)}</div>
+        <div className='cart-order__total'>
+          Total: $ {this.props.cart.summary.toFixed(2)}
         </div>
-      </div>
+      </>
     )
   }
 }

@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact'
 import NotFound from './components/NotFound/NotFound'
 import Product from './components/SingleProduct/SingleProduct'
 import Cart from './components/Cart/Cart'
+import CartSummary from './components/Cart/CartSummary'
 
 class App extends React.Component {
   render() {
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Route exact path={'/rules'} component={Rules} />
             <Route exact path={'/contact'} component={Contact} />
             <Route exact path={'/cart'} component={Cart} />
+            <Route exact path={'/cartsummary'} component={CartSummary} />
             <Route exact path={'/product/:id'} component={Product} />
             <Route path='/404' component={NotFound} />
             <Redirect from='*' to='/404' />

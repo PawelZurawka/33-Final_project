@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProductsList } from '../ProductsList/ProductsList'
-import { sort } from '../../utils/sort'
+import { sort } from '../../utils/Sort/sort'
 import { connect } from 'react-redux'
 import { Button, Row, Col, Card } from 'reactstrap'
 import Carousel from '../features/Carousel/Carousel'

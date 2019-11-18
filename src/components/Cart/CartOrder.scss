@@ -1,0 +1,41 @@
+@import "../../styles/settings.scss";
+
+.cart-order {
+  margin: 20px 0;
+  &__image {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+  &__name {
+    font-size: $base-size * 1.5;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: $base-size * 1.1;
+  }
+  &__btns-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    font-size: $base-size / 1.3;
+  }
+  &__qty {
+    font-size: $base-size * 1.1;
+  }
+  &__discount-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__discount {
+    width: 200px;
+    margin-right: 20px;
+  }
+  &__total {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: $base-size * 1.5;
+  }
+}
