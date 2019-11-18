@@ -5,7 +5,7 @@ import './ProductSummary.scss'
 
 export const ProductSummary = props => (
   <Col className='product-summary' md={5}>
-    <Link to={'/product/' + props.index} index={props.index}>
+    <Link to={'/product/' + props.id}>
       <Card>
         {props.tag ? <Badge>{props.tag}</Badge> : <span></span>}
         <CardImg src={props.image} alt='product' />
