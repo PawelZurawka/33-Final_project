@@ -11,10 +11,10 @@ export class CartSummary extends React.Component {
     return this.props.cart.added.map(product => {
       return (
         <Row className='cart-summary__list' key={product.id}>
-          <Col md={4}>{product.name}</Col>
-          <Col md={3}>$ {product.price.toFixed(2)}</Col>
-          <Col md={2}>{product.qty}</Col>
-          <Col md={3}>$ {(product.price * product.qty).toFixed(2)}</Col>
+          <Col xs={4}>{product.name}</Col>
+          <Col xs={3}>$ {product.price.toFixed(2)}</Col>
+          <Col xs={2}>{product.qty}</Col>
+          <Col xs={3}>$ {(product.price * product.qty).toFixed(2)}</Col>
         </Row>
       )
     })
@@ -22,13 +22,13 @@ export class CartSummary extends React.Component {
 
   render() {
     return (
-      <Card>
-        <PageTitle>Your order</PageTitle>
+      <Card className='cart-summary'>
+        <PageTitle className='page-title'>Your order</PageTitle>
         <Row className='cart-summary__header'>
-          <Col md={4}>Name</Col>
-          <Col md={3}>Price</Col>
-          <Col md={2}>Quantity</Col>
-          <Col md={3}>Full price</Col>
+          <Col xs={4}>Name</Col>
+          <Col xs={3}>Price</Col>
+          <Col xs={2}>Quantity</Col>
+          <Col xs={3}>Full price</Col>
         </Row>
         <div className='cart-summary__list-wrapper'>{this.summary()}</div>
         <span className='cart-summary__total'>

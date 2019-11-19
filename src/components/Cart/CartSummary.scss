@@ -1,6 +1,12 @@
-@import '../../styles/settings.scss';
+@import "../../styles/settings.scss";
 
 .cart-summary {
+  .page-title {
+    padding: 30px;
+    @include breakpoint(xs) {
+      padding: 10px;
+    }
+  }
   &__header {
     font-weight: bold;
     font-size: $base-size * 1.8;
@@ -9,11 +15,23 @@
     margin: 0;
     text-align: center;
     padding: 10px 0;
+    @include breakpoint(xs) {
+      font-size: $base-size * 0.8;
+    }
+    div {
+      @include breakpoint(xs) {
+        padding: 0;
+      }
+    }
   }
   &__list {
     text-align: center;
     padding: 5px 10px;
     margin-top: 10px;
+    @include breakpoint(xs) {
+      font-size: $base-size * 0.8;
+      margin-top: 0;
+    }
   }
   &__list-wrapper {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -22,6 +40,7 @@
   &__btns {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 15px;
   }
   &__total {
@@ -29,5 +48,9 @@
     font-weight: bold;
     font-size: $base-size * 1.8;
     padding: 15px;
+    @include breakpoint(xs) {
+      text-align: center;
+      font-size: $base-size * 1.4;
+    }
   }
 }

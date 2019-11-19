@@ -16,7 +16,7 @@
   }
   &__image {
     max-width: 100%;
-    margin-left: 10px;
+    margin-left: 20px;
     @include breakpoint(xs) {
       margin-left: 0;
     }
