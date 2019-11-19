@@ -19,7 +19,7 @@ const MyModal = props => {
         centered={true}
       >
         <ModalHeader toggle={toggle}>Your order has been accepted.</ModalHeader>
-        <ModalBody>See you next time!</ModalBody>
+        <ModalBody>Thank You and see You next time!</ModalBody>
         <ModalFooter>
           <Button onClick={toggle}>Close</Button>
         </ModalFooter>
