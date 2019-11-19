@@ -5,10 +5,13 @@
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  @include breakpoint(xs) {
+    flex-wrap: nowrap;
+  }
   li {
     margin: 0 $base-size;
   }
-  a {
-    font-size: $base-size * 1.7;
+  @include breakpoint(xs) {
+    margin: 0;
   }
 }

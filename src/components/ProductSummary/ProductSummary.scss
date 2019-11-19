@@ -12,6 +12,14 @@
     .badge {
       transform: scale(1.3);
     }
+    @include breakpoint(xs) {
+      transform: none;
+      border-radius: none;
+      box-shadow: none;
+      .badge {
+        transform: none;
+      }
+    }
   }
   .card {
     padding: 15px;

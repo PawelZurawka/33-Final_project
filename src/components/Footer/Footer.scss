@@ -5,13 +5,30 @@
   align-items: baseline;
   justify-content: space-between;
   margin-top: 40px;
-  &__author-name {
-    font-style: italic;
+  @include breakpoint(xs) {
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   &__caption {
     font-style: italic;
+    @include breakpoint(xs) {
+      margin: 0 auto;
+      font-size: $base-size;
+    }
   }
+  &__author-name {
+    font-style: italic;
+  }
+
   a {
     font-size: $base-size * 1.4;
+    @include breakpoint(xs) {
+      font-size: $base-size;
+    }
+  }
+  ul {
+    @include breakpoint(xs) {
+      margin: 10px auto;
+    }
   }
 }

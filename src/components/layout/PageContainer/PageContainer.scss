@@ -5,4 +5,7 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: $base-size * 2;
+  @include breakpoint(xs) {
+    padding: $base-size;
+  }
 }

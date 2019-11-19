@@ -11,6 +11,9 @@
   cursor: pointer;
   opacity: 1;
   transition: $transition;
+  @include breakpoint(xs) {
+    font-size: $base-size / 1.2;
+  }
   &:focus {
     outline: none;
   }

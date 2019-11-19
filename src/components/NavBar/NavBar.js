@@ -21,9 +21,13 @@ class NavBar extends React.Component {
     return (
       <nav className='navbar'>
         <Logo />
-        <div className='navbar__wrapper'>
+        <div className='navbar__menu'>
           <MainMenu links={links} />
-          <NavLink className='cart__icon' to='/cart' activeClassName='active'>
+          <NavLink
+            className='navbar__cart-icon'
+            to='/cart'
+            activeClassName='active'
+          >
             <FontAwesomeIcon icon={faShoppingCart} />
           </NavLink>
         </div>

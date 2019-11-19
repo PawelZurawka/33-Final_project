@@ -5,21 +5,37 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
-  transition: 0.3s;
-  &__wrapper {
+  margin-bottom: 14px;
+  transition: $transition;
+  @include breakpoint(xs) {
+    padding: 0;
+  }
+  &__menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include breakpoint(xs) {
+      margin: 0 auto;
+    }
   }
-}
-
-.cart__icon {
-  color: $color-text;
-  font-size: $base-size * 1.8;
-  margin-bottom: 0.9rem;
-  margin-left: 1rem;
-  &.active {
-    border-bottom: none;
+  &__cart-icon {
+    color: $color-text;
+    font-size: $base-size * 1.8;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    @include breakpoint(xs) {
+      margin-top: 3px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    &.active {
+      border-bottom: none;
+    }
+  }
+  a {
+    font-size: $base-size * 1.7;
+    @include breakpoint(xs) {
+      font-size: $base-size;
+    }
   }
 }
