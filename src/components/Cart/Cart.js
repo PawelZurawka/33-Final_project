@@ -3,7 +3,7 @@ import CartOrder from './CartOrder'
 import { Container, Card } from 'reactstrap'
 
 const Cart = () => (
-  <Container className='cart'>
+  <Container>
     <Card>
       <CartOrder />
     </Card>
