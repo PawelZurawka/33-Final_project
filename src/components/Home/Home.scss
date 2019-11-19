@@ -36,4 +36,8 @@
 .sort .card {
   padding: 20px;
   margin-top: 17.5px;
+  @include breakpoint(xs) {
+    margin-top: 0;
+    padding: 10px;
+  }
 }

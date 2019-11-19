@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { qtyAdd, qtyRemove, removeFromCart } from '../../actions/cartActions'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { Row, Col, Input } from 'reactstrap'
+import { Row, Col, Input, Card } from 'reactstrap'
 import Button from '../common/Button/Button'
 import cutText from '../../utils/cutText/cutText'
 import PageTitle from '../common/PageTitle/PageTitle'
@@ -14,7 +14,7 @@ export class CartOrder extends React.Component {
     return this.props.cart.added.map(product => {
       return (
         <div key={product.id}>
-          <Row className='cart-order'>
+          <Row className='cart-order__product'>
             <Col md={2}>
               <Link to={'product/' + product.id}>
                 <img
@@ -30,7 +30,9 @@ export class CartOrder extends React.Component {
                 {cutText(product.description, 150)}
               </p>
             </Col>
-            <Col md={2}>$ {(product.price * product.qty).toFixed(2)}</Col>
+            <Col className='cart-order__price' md={2}>
+              $ {(product.price * product.qty).toFixed(2)}
+            </Col>
             <Col md={3}>
               <div className='cart-order__btns-wrapper'>
                 <Button onClick={() => this.props.qtyRemove(product)}>-</Button>
@@ -51,7 +53,7 @@ export class CartOrder extends React.Component {
 
   render() {
     return (
-      <>
+      <Card className='cart-order'>
         <PageTitle>Your shopping:</PageTitle>
         {this.createOrder()}
         <div className='cart-order__discount-wrapper'>
@@ -68,7 +70,7 @@ export class CartOrder extends React.Component {
             <Button>To summary</Button>
           </Link>
         </div>
-      </>
+      </Card>
     )
   }
 }

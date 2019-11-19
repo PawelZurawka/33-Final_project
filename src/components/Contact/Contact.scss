@@ -3,12 +3,22 @@
 .contact {
   text-align: center;
   font-size: $base-size * 1.6;
-  padding-bottom: 50px;
+  padding: 30px;
+  @include breakpoint(xs) {
+    padding: 20px 0 0 0;
+  }
   .page-title {
     margin-bottom: 50px;
+    @include breakpoint(xs) {
+      margin-bottom: 30px;
+    }
   }
   .card-text {
     margin-bottom: 30px;
+    @include breakpoint(xs) {
+      font-size: $base-size * 1.1;
+      margin-bottom: 15px;
+    }
   }
   &__icons-wrapper {
     margin-top: 10px;

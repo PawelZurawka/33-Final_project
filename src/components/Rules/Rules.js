@@ -11,7 +11,7 @@ const Rules = () => (
         <h3 className='rules__header'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
-        <p>
+        <p className='rules__paragraph'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -31,7 +31,7 @@ const Rules = () => (
         <h3 className='rules__header'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
-        <p>
+        <p className='rules__paragraph'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -51,7 +51,7 @@ const Rules = () => (
         <h3 className='rules__header'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
-        <p>
+        <p className='rules__paragraph'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -71,7 +71,7 @@ const Rules = () => (
         <h3 className='rules__header'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
-        <p>
+        <p className='rules__paragraph'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -91,7 +91,7 @@ const Rules = () => (
         <h3 className='rules__header'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
-        <p>
+        <p className='rules__paragraph'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan

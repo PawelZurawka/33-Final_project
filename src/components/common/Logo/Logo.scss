@@ -6,9 +6,8 @@
   margin-bottom: 10px;
   @include breakpoint(xs) {
     transform: scale(0.6);
-    margin-top: -25px;
+    margin: -25px auto 0 auto;
     text-align: center;
-    margin-bottom: 0;
   }
   &__company-name {
     font-weight: bold;

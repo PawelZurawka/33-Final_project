@@ -1,12 +1,10 @@
 import React from 'react'
 import CartOrder from './CartOrder'
-import { Container, Card } from 'reactstrap'
+import { Container } from 'reactstrap'
 
 const Cart = () => (
   <Container>
-    <Card>
-      <CartOrder />
-    </Card>
+    <CartOrder />
   </Container>
 )
 

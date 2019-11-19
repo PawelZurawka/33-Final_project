@@ -1,9 +1,27 @@
+@import "../../styles/settings.scss";
+
 .faq {
   padding: 30px;
-  .page-title {
-    margin: 0;
+  @include breakpoint(xs) {
+    padding: 20px 0 0 0;
   }
-  &__header {
+  ol {
+    @include breakpoint(xs) {
+      padding-left: 30px;
+    }
+  }
+  &__question {
     margin: 40px 0 20px 0;
+    @include breakpoint(xs) {
+      margin: 20px 0 10px 0;
+      font-size: $base-size * 1.4;
+      padding-right: 10px;
+    }
+  }
+  &__answer {
+    @include breakpoint(xs) {
+      font-size: $base-size;
+      padding-right: 10px;
+    }
   }
 }

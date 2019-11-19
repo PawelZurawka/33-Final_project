@@ -8,10 +8,10 @@ const FAQ = () => (
     <PageTitle>Frequently Asked Questions</PageTitle>
     <ol>
       <li>
-        <h3 className='faq__header'>
+        <h3 className='faq__question'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit?
         </h3>
-        <p>
+        <p className='faq__answer'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -28,10 +28,10 @@ const FAQ = () => (
         </p>
       </li>
       <li>
-        <h3 className='faq__header'>
+        <h3 className='faq__question'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit?
         </h3>
-        <p>
+        <p className='faq__answer'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -48,10 +48,10 @@ const FAQ = () => (
         </p>
       </li>
       <li>
-        <h3 className='faq__header'>
+        <h3 className='faq__question'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit?
         </h3>
-        <p>
+        <p className='faq__answer'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -68,10 +68,10 @@ const FAQ = () => (
         </p>
       </li>
       <li>
-        <h3 className='faq__header'>
+        <h3 className='faq__question'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit?
         </h3>
-        <p>
+        <p className='faq__answer'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
@@ -88,10 +88,10 @@ const FAQ = () => (
         </p>
       </li>
       <li>
-        <h3 className='faq__header'>
+        <h3 className='faq__question'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit?
         </h3>
-        <p>
+        <p className='faq__answer'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et
           nibh sit amet ipsum mollis condimentum. Aliquam sit amet pulvinar
           nisl. Quisque gravida, arcu sed accumsan placerat, mi libero accumsan
