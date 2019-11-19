@@ -1,9 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// import { fas } from '@fortawesome/free-solid-svg-icons'
-// import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 
 // Import components
 import MainLayout from './components/layout/MainLayout/MainLayout'
@@ -38,5 +34,4 @@ class App extends React.Component {
   }
 }
 
-// library.add(fab, fas, faShoppingBag)
 export default App
