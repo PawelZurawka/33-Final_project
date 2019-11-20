@@ -3,10 +3,16 @@
 .rules {
   padding: 30px;
   @include breakpoint(xs) {
-    padding: 20px 0 0 0;
+    padding: 20px 10px 0 10px;
+  }
+  @include breakpoint(sm) {
+    padding: 20px 10px 0 10px;
   }
   ol {
     @include breakpoint(xs) {
+      padding-left: 30px;
+    }
+    @include breakpoint(sm) {
       padding-left: 30px;
     }
   }
@@ -17,9 +23,18 @@
       font-size: $base-size * 1.4;
       padding-right: 10px;
     }
+    @include breakpoint(sm) {
+      margin: 20px 0 10px 0;
+      font-size: $base-size * 1.4;
+      padding-right: 10px;
+    }
   }
   &__paragraph {
     @include breakpoint(xs) {
+      font-size: $base-size;
+      padding-right: 10px;
+    }
+    @include breakpoint(sm) {
       font-size: $base-size;
       padding-right: 10px;
     }

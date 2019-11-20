@@ -4,7 +4,7 @@ import { Col, Card, CardImg, CardTitle, CardSubtitle, Badge } from 'reactstrap'
 import './ProductSummary.scss'
 
 export const ProductSummary = props => (
-  <Col className='product-summary' md={5}>
+  <Col className='product-summary' sm={5} md={5}>
     <Link to={'/product/' + props.id}>
       <Card>
         {props.tag ? <Badge>{props.tag}</Badge> : <span></span>}

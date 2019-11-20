@@ -9,11 +9,19 @@
     flex-direction: column-reverse;
     margin-top: 10px;
   }
+  @include breakpoint(sm) {
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
   &__caption {
     font-style: italic;
     @include breakpoint(xs) {
       margin: 0 auto;
       font-size: $base-size;
+    }
+    @include breakpoint(sm) {
+      margin: 0 auto;
+      font-size: $base-size * 1.2;
     }
   }
   &__author-name {
@@ -25,10 +33,16 @@
     @include breakpoint(xs) {
       font-size: $base-size;
     }
+    @include breakpoint(sm) {
+      font-size: $base-size * 1.2;
+    }
   }
   ul {
     @include breakpoint(xs) {
       margin: 10px auto;
+    }
+    @include breakpoint(sm) {
+      margin: 20px auto;
     }
   }
 }

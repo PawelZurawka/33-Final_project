@@ -1,10 +1,14 @@
 @import "../../styles/settings.scss";
 
 .cart-summary {
+  word-break: keep-all;
   .page-title {
     padding: 30px;
     @include breakpoint(xs) {
       padding: 10px;
+    }
+    @include breakpoint(sm) {
+      padding: 15px;
     }
   }
   &__header {
@@ -18,10 +22,8 @@
     @include breakpoint(xs) {
       font-size: $base-size * 0.8;
     }
-    div {
-      @include breakpoint(xs) {
-        padding: 0;
-      }
+    @include breakpoint(sm) {
+      font-size: $base-size * 1.2;
     }
   }
   &__list {
@@ -30,6 +32,10 @@
     margin-top: 10px;
     @include breakpoint(xs) {
       font-size: $base-size * 0.8;
+      margin-top: 0;
+    }
+    @include breakpoint(sm) {
+      font-size: $base-size;
       margin-top: 0;
     }
   }
@@ -51,6 +57,9 @@
     @include breakpoint(xs) {
       text-align: center;
       font-size: $base-size * 1.4;
+    }
+    @include breakpoint(sm) {
+      font-size: $base-size * 1.3;
     }
   }
 }

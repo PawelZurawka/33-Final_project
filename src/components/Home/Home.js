@@ -27,7 +27,7 @@ class Home extends React.Component {
       <>
         <Carousel />
         <Row>
-          <Col className='sort' md={3}>
+          <Col className='sort' sm={12} md={3}>
             <Card>
               <h4 className='sort__header'>Sort by:</h4>
               <Button

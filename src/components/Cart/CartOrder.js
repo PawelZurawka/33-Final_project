@@ -39,7 +39,10 @@ export class CartOrder extends React.Component {
                 <span className='cart-order__qty'>{product.qty}</span>
                 <Button onClick={() => this.props.qtyAdd(product)}>+</Button>
 
-                <Button onClick={() => this.props.removeFromCart(product)}>
+                <Button
+                  variant='danger'
+                  onClick={() => this.props.removeFromCart(product)}
+                >
                   delete
                 </Button>
               </div>

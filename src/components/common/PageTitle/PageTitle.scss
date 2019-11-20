@@ -10,4 +10,7 @@
   @include breakpoint(xs) {
     font-size: $base-size * 2;
   }
+  @include breakpoint(sm) {
+    font-size: $base-size * 2.5;
+  }
 }

@@ -9,6 +9,16 @@
     margin: -25px auto 0 auto;
     text-align: center;
   }
+  @include breakpoint(sm) {
+    transform: scale(0.7);
+    margin: -25px auto 0 auto;
+    text-align: center;
+  }
+  @include breakpoint(md) {
+    display: block;
+    text-align: center;
+    transform: scale(0.9);
+  }
   &__company-name {
     font-weight: bold;
     font-size: $base-size * 2;

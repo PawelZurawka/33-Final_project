@@ -10,11 +10,17 @@
   @include breakpoint(xs) {
     padding: 0;
   }
+  @include breakpoint(sm) {
+    margin-bottom: 0;
+  }
   &__menu {
     display: flex;
     justify-content: center;
     align-items: center;
     @include breakpoint(xs) {
+      margin: 0 auto;
+    }
+    @include breakpoint(sm) {
       margin: 0 auto;
     }
   }
@@ -28,6 +34,9 @@
       margin-bottom: 0;
       margin-left: 0;
     }
+    @include breakpoint(md) {
+      margin: 18px 10px 0 10px;
+    }
     &.active {
       border-bottom: none;
     }
@@ -36,6 +45,12 @@
     font-size: $base-size * 1.7;
     @include breakpoint(xs) {
       font-size: $base-size;
+    }
+    @include breakpoint(sm) {
+      font-size: $base-size * 1.4;
+    }
+    @include breakpoint(md) {
+      font-size: $base-size * 1.5;
     }
   }
 }
