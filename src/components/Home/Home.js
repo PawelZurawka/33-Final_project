@@ -4,6 +4,7 @@ import { sort } from '../../utils/Sort/sort'
 import { connect } from 'react-redux'
 import { Button, Row, Col, Card } from 'reactstrap'
 import Carousel from '../features/Carousel/Carousel'
+import Footer from '../Footer/Footer'
 import './Home.scss'
 
 class Home extends React.Component {
@@ -72,6 +73,7 @@ class Home extends React.Component {
             <ProductsList sorted={this.state} />
           </Col>
         </Row>
+        <Footer />
       </>
     )
   }

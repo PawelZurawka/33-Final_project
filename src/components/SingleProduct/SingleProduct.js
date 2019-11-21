@@ -16,6 +16,7 @@ import {
 } from 'reactstrap'
 import ButtonBack from '../common/ButtonBack/ButtonBack'
 import Button from '../common/Button/Button'
+import Footer from '../Footer/Footer'
 import './SingleProduct.scss'
 
 export class SingleProduct extends React.Component {
@@ -26,59 +27,64 @@ export class SingleProduct extends React.Component {
 
   render() {
     return (
-      <Container>
-        <Row>
-          <Col className='single-product' md={12}>
-            <Card>
-              <Row>
-                <Col md={6}>
-                  <ButtonBack />
-                  <Badge>
-                    {this.props.products[this.props.match.params.id].tag}
-                  </Badge>
-                  <CardImg
-                    src={this.props.products[this.props.match.params.id].image}
-                    alt='product'
-                  ></CardImg>
-                </Col>
-                <Col md={6}>
-                  <CardBody>
-                    <CardTitle>
-                      {this.props.products[this.props.match.params.id].name}
-                    </CardTitle>
-                    <CardSubtitle>
-                      ${' '}
-                      {this.props.products[
-                        this.props.match.params.id
-                      ].price.toFixed(2)}
-                    </CardSubtitle>
-                    <CardText>
-                      {
-                        this.props.products[this.props.match.params.id]
-                          .description
+      <>
+        <Container>
+          <Row>
+            <Col className='single-product' md={12}>
+              <Card>
+                <Row>
+                  <Col md={6}>
+                    <ButtonBack />
+                    <Badge>
+                      {this.props.products[this.props.match.params.id].tag}
+                    </Badge>
+                    <CardImg
+                      src={
+                        this.props.products[this.props.match.params.id].image
                       }
-                      {
-                        this.props.products[this.props.match.params.id]
-                          .description
-                      }
-                    </CardText>
-                    <Button
-                      variant='primary'
-                      onClick={() =>
-                        this.props.addToCart(
+                      alt='product'
+                    ></CardImg>
+                  </Col>
+                  <Col md={6}>
+                    <CardBody>
+                      <CardTitle>
+                        {this.props.products[this.props.match.params.id].name}
+                      </CardTitle>
+                      <CardSubtitle>
+                        ${' '}
+                        {this.props.products[
+                          this.props.match.params.id
+                        ].price.toFixed(2)}
+                      </CardSubtitle>
+                      <CardText>
+                        {
                           this.props.products[this.props.match.params.id]
-                        )
-                      }
-                    >
-                      Add to cart
-                    </Button>
-                  </CardBody>
-                </Col>
-              </Row>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+                            .description
+                        }
+                        {
+                          this.props.products[this.props.match.params.id]
+                            .description
+                        }
+                      </CardText>
+                      <Button
+                        variant='primary'
+                        onClick={() =>
+                          this.props.addToCart(
+                            this.props.products[this.props.match.params.id]
+                          )
+                        }
+                      >
+                        Add to cart
+                      </Button>
+                    </CardBody>
+                  </Col>
+                </Row>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+        <Footer />
+      </>
     )
   }
 }
