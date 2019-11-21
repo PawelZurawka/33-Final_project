@@ -46,6 +46,9 @@
       margin: 0 0 5px 0;
       text-align: center;
     }
+    @include breakpoint(md) {
+      font-size: $base-size * 1.4;
+    }
   }
   &__description {
     font-size: $base-size * 1.1;
@@ -61,6 +64,9 @@
       text-align: center;
       padding: 0 10px;
     }
+    @include breakpoint(md) {
+      font-size: $base-size;
+    }
   }
   &__price {
     @include breakpoint(xs) {
@@ -72,6 +78,9 @@
       font-size: $base-size * 1.2;
       margin-bottom: 10px;
       text-align: center;
+    }
+    @include breakpoint(md) {
+      font-size: $base-size * 1.1;
     }
   }
   &__btns-wrapper {

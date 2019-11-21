@@ -37,5 +37,13 @@
       box-shadow: none;
       opacity: 1;
     }
+    @include breakpoint(sm) {
+      box-shadow: none;
+      opacity: 1;
+    }
+    @include breakpoint(md) {
+      box-shadow: none;
+      opacity: 1;
+    }
   }
 }

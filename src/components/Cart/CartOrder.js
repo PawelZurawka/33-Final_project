@@ -24,7 +24,7 @@ export class CartOrder extends React.Component {
                 />
               </Link>
             </Col>
-            <Col md={5}>
+            <Col md={4}>
               <h2 className='cart-order__name'>{product.name}</h2>
               <p className='cart-order__description'>
                 {cutText(product.description, 150)}
@@ -33,7 +33,7 @@ export class CartOrder extends React.Component {
             <Col className='cart-order__price' md={2}>
               $ {(product.price * product.qty).toFixed(2)}
             </Col>
-            <Col md={3}>
+            <Col md={4}>
               <div className='cart-order__btns-wrapper'>
                 <Button onClick={() => this.props.qtyRemove(product)}>-</Button>
                 <span className='cart-order__qty'>{product.qty}</span>

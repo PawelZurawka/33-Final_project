@@ -28,6 +28,14 @@
         transform: none;
       }
     }
+    @include breakpoint(md) {
+      transform: none;
+      border-radius: none;
+      box-shadow: none;
+      .badge {
+        transform: none;
+      }
+    }
   }
   .card {
     padding: 15px;
