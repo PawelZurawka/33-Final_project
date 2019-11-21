@@ -63,7 +63,7 @@ export class CartOrder extends React.Component {
   render() {
     return (
       <>
-        {this.props.cart.summary > 0 ? (
+        {this.props.cart.summary ? (
           <Card className='cart-order'>
             <PageTitle>Your shopping:</PageTitle>
             {this.createOrder()}
