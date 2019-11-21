@@ -38,7 +38,13 @@ export default function(state = { added: [], summary: 0 }, action) {
       }
 
     case 'REMOVE_FROM_CART':
-      return state.added.filter(product => product.id !== action.payload.id)
+      const newList = state.added.filter(
+        product => product.id !== action.payload.id
+      )
+      return {
+        added: [...newList],
+        summary: state.summary,
+      }
 
     default:
       return state
