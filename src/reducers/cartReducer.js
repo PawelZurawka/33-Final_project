@@ -40,12 +40,6 @@ export default function(state = { added: [], summary: 0 }, action) {
     case 'REMOVE_FROM_CART':
       return state.added.filter(product => product.id !== action.payload.id)
 
-    case 'REMOVE_ALL_PRODUCTS':
-      return {
-        added: [],
-        summary: 0,
-      }
-
     default:
       return state
   }
