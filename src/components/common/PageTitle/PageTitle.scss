@@ -16,4 +16,7 @@
   @include breakpoint(md) {
     font-size: $base-size * 2.8;
   }
+  @include breakpoint(lg) {
+    font-size: $base-size * 3.2;
+  }
 }

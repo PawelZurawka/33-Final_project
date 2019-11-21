@@ -18,22 +18,25 @@
     @include breakpoint(md) {
       padding-left: 30px;
     }
+    @include breakpoint(lg) {
+      padding-left: 30px;
+    }
   }
   &__question {
     margin: 40px 0 20px 0;
     @include breakpoint(xs) {
       margin: 20px 0 10px 0;
       font-size: $base-size * 1.4;
-      padding-right: 10px;
     }
     @include breakpoint(sm) {
       margin: 20px 0 10px 0;
       font-size: $base-size * 1.4;
-      padding-right: 10px;
     }
     @include breakpoint(md) {
       font-size: $base-size * 1.8;
-      padding-right: 10px;
+    }
+    @include breakpoint(lg) {
+      font-size: $base-size * 1.8;
     }
   }
   &__answer {
@@ -46,6 +49,9 @@
       padding-right: 10px;
     }
     @include breakpoint(md) {
+      font-size: $base-size / 0.9;
+    }
+    @include breakpoint(lg) {
       font-size: $base-size / 0.9;
     }
   }

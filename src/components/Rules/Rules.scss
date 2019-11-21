@@ -18,6 +18,9 @@
     @include breakpoint(md) {
       padding-left: 30px;
     }
+    @include breakpoint(lg) {
+      padding-left: 30px;
+    }
   }
   &__header {
     margin: 40px 0 20px 0;
@@ -35,6 +38,9 @@
       font-size: $base-size * 1.8;
       padding-right: 10px;
     }
+    @include breakpoint(lg) {
+      font-size: $base-size * 1.8;
+    }
   }
   &__paragraph {
     @include breakpoint(xs) {
@@ -46,6 +52,9 @@
       padding-right: 10px;
     }
     @include breakpoint(md) {
+      font-size: $base-size / 0.9;
+    }
+    @include breakpoint(lg) {
       font-size: $base-size / 0.9;
     }
   }
