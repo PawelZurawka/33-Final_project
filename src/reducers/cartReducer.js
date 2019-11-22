@@ -43,7 +43,7 @@ export default function(state = { added: [], summary: 0 }, action) {
       )
       return {
         added: [...newList],
-        summary: state.summary,
+        summary: state.summary - action.payload.price,
       }
 
     default:
