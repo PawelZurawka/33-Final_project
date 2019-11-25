@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 import Button from '../../common/Button/Button'
+import './Modal.scss'
 
 const MyModal = props => {
   const { className } = props
@@ -21,7 +22,9 @@ const MyModal = props => {
         <ModalHeader toggle={toggle}>Your order has been accepted.</ModalHeader>
         <ModalBody>Thank You and see You next time!</ModalBody>
         <ModalFooter>
-          <a href='/'>Close</a>
+          <a href='/' className='btn__close'>
+            Close
+          </a>
         </ModalFooter>
       </Modal>
     </div>
