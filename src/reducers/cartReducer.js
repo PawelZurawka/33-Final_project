@@ -1,8 +1,7 @@
 export default function(state = { added: [], summary: 0 }, action) {
   switch (action.type) {
     case 'ADD_TO_CART':
-      const summary =
-        parseFloat(state.summary) + parseFloat(action.payload.price)
+      const parse = parseFloat(state.summary + action.payload.price).toFixed(2)
       let added = [...state.added, action.payload]
       state.added.forEach(product => {
         if (product.id === action.payload.id) {
@@ -10,7 +9,7 @@ export default function(state = { added: [], summary: 0 }, action) {
           added = [...state.added]
         }
       })
-      return { ...state, added, summary: parseFloat(summary.toFixed(2)) }
+      return { ...state, added, summary: parseFloat(parse) }
 
     case 'QTY_ADD':
       state.added.forEach(product => {
@@ -37,12 +36,13 @@ export default function(state = { added: [], summary: 0 }, action) {
       }
 
     case 'REMOVE_FROM_CART':
+      const priceToSubstract = action.payload.qty * action.payload.price
       const newList = state.added.filter(
         product => product.id !== action.payload.id
       )
       return {
         added: [...newList],
-        summary: state.summary - action.payload.price,
+        summary: state.summary - priceToSubstract,
       }
 
     default:

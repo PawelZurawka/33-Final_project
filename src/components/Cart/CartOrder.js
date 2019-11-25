@@ -43,7 +43,6 @@ export class CartOrder extends React.Component {
                   </Button>
                   <span className='cart-order__qty'>{product.qty}</span>
                   <Button onClick={() => this.props.qtyAdd(product)}>+</Button>
-
                   <Button
                     variant='danger'
                     onClick={() => this.props.removeFromCart(product)}
@@ -63,7 +62,7 @@ export class CartOrder extends React.Component {
   render() {
     return (
       <>
-        {this.props.cart.summary ? (
+        {this.props.cart.added && this.props.cart.added.length > 0 ? (
           <Card className='cart-order'>
             <PageTitle>Your shopping:</PageTitle>
             {this.createOrder()}
