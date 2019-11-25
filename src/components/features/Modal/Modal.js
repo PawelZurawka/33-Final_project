@@ -21,7 +21,7 @@ const MyModal = props => {
         <ModalHeader toggle={toggle}>Your order has been accepted.</ModalHeader>
         <ModalBody>Thank You and see You next time!</ModalBody>
         <ModalFooter>
-          <Button onClick={toggle}>Close</Button>
+          <a href='/'>Close</a>
         </ModalFooter>
       </Modal>
     </div>
