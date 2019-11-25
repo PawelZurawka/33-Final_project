@@ -17,6 +17,7 @@ const MyModal = props => {
         isOpen={modal}
         toggle={toggle}
         className={className}
+        backdrop={'static'}
         centered={true}
       >
         <ModalHeader toggle={toggle}>Your order has been accepted.</ModalHeader>
