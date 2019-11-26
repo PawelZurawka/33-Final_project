@@ -41,6 +41,19 @@
       border-bottom: none;
     }
   }
+  &__cart-counter {
+    font-size: $base-size;
+    position: absolute;
+    @include breakpoint(xs) {
+      font-size: $base-size / 2;
+    }
+    @include breakpoint(sm) {
+      font-size: $base-size / 1.3;
+    }
+    @include breakpoint(md) {
+      font-size: $base-size / 1.1;
+    }
+  }
   a {
     font-size: $base-size * 1.7;
     @include breakpoint(xs) {

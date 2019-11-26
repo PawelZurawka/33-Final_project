@@ -1,4 +1,7 @@
-export default function(state = { added: [], summary: 0 }, action) {
+export default function(
+  state = { added: [], summary: 0, numberOfProducts: 0 },
+  action
+) {
   switch (action.type) {
     case 'ADD_TO_CART':
       const parse = parseFloat(state.summary + action.payload.price).toFixed(2)
@@ -9,7 +12,12 @@ export default function(state = { added: [], summary: 0 }, action) {
           added = [...state.added]
         }
       })
-      return { ...state, added, summary: parseFloat(parse) }
+      return {
+        ...state,
+        added,
+        summary: parseFloat(parse),
+        numberOfProducts: state.numberOfProducts + action.payload.qty,
+      }
 
     case 'QTY_ADD':
       state.added.forEach(product => {
@@ -20,6 +28,7 @@ export default function(state = { added: [], summary: 0 }, action) {
       return {
         added: [...state.added],
         summary: state.summary + action.payload.price,
+        numberOfProducts: state.numberOfProducts + 1,
       }
 
     case 'QTY_REMOVE':
@@ -33,6 +42,7 @@ export default function(state = { added: [], summary: 0 }, action) {
           return object.qty !== 0
         }),
         summary: state.summary - action.payload.price,
+        numberOfProducts: state.numberOfProducts - 1,
       }
 
     case 'REMOVE_FROM_CART':
@@ -43,6 +53,7 @@ export default function(state = { added: [], summary: 0 }, action) {
       return {
         added: [...newList],
         summary: state.summary - priceToSubstract,
+        numberOfProducts: state.numberOfProducts - action.payload.qty,
       }
 
     default:
