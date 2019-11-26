@@ -31,7 +31,9 @@ class NavBar extends React.Component {
           >
             <FontAwesomeIcon icon={faShoppingCart} />
             {this.props.cart.added && this.props.cart.added.length > 0 && (
-              <span>{this.props.cart.added.length}</span>
+              <span className='navbar__cart-counter'>
+                {this.props.cart.added.length}
+              </span>
             )}
           </NavLink>
         </div>
