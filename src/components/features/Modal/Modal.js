@@ -5,9 +5,7 @@ import './Modal.scss'
 
 const MyModal = props => {
   const { className } = props
-
   const [modal, setModal] = useState(false)
-
   const toggle = () => setModal(!modal)
 
   return (

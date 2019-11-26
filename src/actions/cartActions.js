@@ -25,9 +25,3 @@ export const removeFromCart = product => {
     payload: product,
   }
 }
-
-export const removeAllProducts = () => {
-  return {
-    type: 'REMOVE_ALL_PRODUCTS',
-  }
-}

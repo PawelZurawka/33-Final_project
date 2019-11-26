@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import 'animate.css/animate.min.css'
 import { Provider } from 'react-redux'
 import store from './reducers/store'
 import * as serviceWorker from './serviceWorker'

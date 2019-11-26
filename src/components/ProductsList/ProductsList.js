@@ -2,8 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { ProductSummary } from '../ProductSummary/ProductSummary'
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap'
-
-// Import styles
 import './ProductsList.scss'
 
 export class ProductsList extends React.Component {
