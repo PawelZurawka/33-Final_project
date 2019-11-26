@@ -1,5 +1,7 @@
 # 33-Final_project
 
+DEMO ON FIREBASE [HERE](https://outdoor-online-shop-b4dcc.firebaseapp.com/).
+
 **First use `yarn install` in main project folder**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
